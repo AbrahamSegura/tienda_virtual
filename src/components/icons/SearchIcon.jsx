@@ -1,7 +1,8 @@
+import { Ico } from "../../style/topbar"
 
 export const SearchIcon = () => {
   return (
-    <i>
+    <Ico>
       <svg
         xmlns='http://www.w3.org/2000/svg'
         width='24'
@@ -17,6 +18,6 @@ export const SearchIcon = () => {
         <path stroke='none' d='M0 0h24v24H0z' />
         <path d='M3 10a7 7 0 1014 0 7 7 0 10-14 0M21 21l-6-6' />
       </svg>
-    </i>
+    </Ico>
   )
 }

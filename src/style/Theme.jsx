@@ -7,14 +7,21 @@ const theme = {
     white:'#fff',
     grey: '#999a9f',
     shadowPrimary:'#a6c1f7',
-    shadowSegundary:'#cff4ff'
+    shadowSegundary:'#cff4ff',
+    shadowRed: "#fdacc0"
   },
   bgColor:{
     ligth: '#fff',
     dark: '#333'
   },
   shadow:{
-    box: '0px 2px 4px rgba(0, 0, 0, .15)'
+    box: '0px 0 3px 3px rgba(0, 0, 0, .15)'
+  },
+  media:{
+    PHONE:"580px",
+    TABLET:"850px",
+    LAPTOP:"1270px",
+    bordeRadius:"15px"
   }
 }
 

@@ -1,0 +1,458 @@
+[
+  {
+    "type": "header",
+    "version": "5.2.1",
+    "comment": "Export to JSON plugin for PHPMyAdmin"
+  },
+  {
+    "type": "database",
+    "name": "fcia_cagua"
+  },
+  {
+    "type": "table",
+    "name": "catalogo",
+    "database": "fcia_cagua",
+    "data": [
+      {
+        "id_catalogo": "5",
+        "nombre_producto": "Acetaminofén",
+        "nombre_sede": "Cagua",
+        "precio_divisa": "1.54",
+        "modificado": "2023-11-28 18:09:27",
+        "linea": "medicina_general",
+        "marca": "Genven",
+        "componente": "Acetaminofén ",
+        "link_img": "https://i.postimg.cc/W3rGCHNP/acetaminocefen-x-650-x-30-gv-1.jpg,https://i.postimg.cc/vBJsHcwV/acetaminofen-x-650-x-30-gv-2.jpg"
+      },
+      {
+        "id_catalogo": "6",
+        "nombre_producto": "Acetaminofén",
+        "nombre_sede": "Ayacucho",
+        "precio_divisa": "1.20",
+        "modificado": "2023-11-28 18:09:27",
+        "linea": "medicina_general",
+        "marca": "Genven",
+        "componente": "Acetaminofén",
+        "link_img": "https://i.postimg.cc/W3rGCHNP/acetaminocefen-x-650-x-30-gv-1.jpg,https://i.postimg.cc/vBJsHcwV/acetaminofen-x-650-x-30-gv-2.jpg"
+      },
+      {
+        "id_catalogo": "7",
+        "nombre_producto": "Acetaminofén",
+        "nombre_sede": "Cagua",
+        "precio_divisa": "0.80",
+        "modificado": "2023-11-28 18:09:27",
+        "linea": "medicina_general",
+        "marca": "Genven",
+        "componente": "Acetaminofén ",
+        "link_img": "https://i.postimg.cc/cC7wFts7/acetaminofen-x-500-x-10-gv-1.jpg,https://i.postimg.cc/nhSR4gSF/acetaminofen-x-500-x-10-gv-2.jpg"
+      },
+      {
+        "id_catalogo": "8",
+        "nombre_producto": "Acetaminofén",
+        "nombre_sede": "Ayacucho",
+        "precio_divisa": "0.75",
+        "modificado": "2023-11-28 18:09:27",
+        "linea": "medicina_general",
+        "marca": "Genven",
+        "componente": "Acetaminofén",
+        "link_img": "https://i.postimg.cc/cC7wFts7/acetaminofen-x-500-x-10-gv-1.jpg,https://i.postimg.cc/nhSR4gSF/acetaminofen-x-500-x-10-gv-2.jpg"
+      },
+      {
+        "id_catalogo": "9",
+        "nombre_producto": "Miovit Jab",
+        "nombre_sede": "Cagua",
+        "precio_divisa": "10.03",
+        "modificado": "2023-11-28 18:18:49",
+        "linea": "medicina_general",
+        "marca": "Cofasa",
+        "componente": "Complejo B",
+        "link_img": "https://i.postimg.cc/BQxwbF7J/miovit-jar-180-1.jpg"
+      },
+      {
+        "id_catalogo": "10",
+        "nombre_producto": "Miovit Jab",
+        "nombre_sede": "Ayacucho",
+        "precio_divisa": "10.80",
+        "modificado": "2023-11-28 18:18:49",
+        "linea": "medicina_general",
+        "marca": "Cofasa",
+        "componente": "Complejo B",
+        "link_img": "https://i.postimg.cc/BQxwbF7J/miovit-jar-180-1.jpg"
+      },
+      {
+        "id_catalogo": "11",
+        "nombre_producto": "Miovit Jab",
+        "nombre_sede": "Cagua",
+        "precio_divisa": "9.98",
+        "modificado": "2023-11-28 18:18:49",
+        "linea": "medicina_general",
+        "marca": "Cofasa",
+        "componente": "Complejo B",
+        "link_img": "https://i.postimg.cc/bvQc1vTh/miovit-x-90-cc-1.jpg"
+      },
+      {
+        "id_catalogo": "12",
+        "nombre_producto": "Miovit Jab",
+        "nombre_sede": "Ayacucho",
+        "precio_divisa": "10.00",
+        "modificado": "2023-11-28 18:18:49",
+        "linea": "medicina_general",
+        "marca": "Cofasa",
+        "componente": "Complejo B",
+        "link_img": "https://i.postimg.cc/bvQc1vTh/miovit-x-90-cc-1.jpg"
+      },
+      {
+        "id_catalogo": "13",
+        "nombre_producto": "Miovit Amp",
+        "nombre_sede": "Cagua",
+        "precio_divisa": "5.64",
+        "modificado": "2023-11-28 18:18:49",
+        "linea": "medicina_general",
+        "marca": "Cofasa",
+        "componente": "Complejo B",
+        "link_img": "https://i.postimg.cc/N04cHVNf/miovit-x-3-cc-x-3-amp-1.jpg"
+      },
+      {
+        "id_catalogo": "14",
+        "nombre_producto": "Miovit Amp",
+        "nombre_sede": "Ayacucho",
+        "precio_divisa": "5.64",
+        "modificado": "2023-11-28 18:18:49",
+        "linea": "medicina_general",
+        "marca": "Cofasa",
+        "componente": "Complejo B",
+        "link_img": "https://i.postimg.cc/N04cHVNf/miovit-x-3-cc-x-3-amp-1.jpg"
+      },
+      {
+        "id_catalogo": "15",
+        "nombre_producto": "Miovit Amp",
+        "nombre_sede": "Cagua",
+        "precio_divisa": "8.32",
+        "modificado": "2023-11-28 18:18:49",
+        "linea": "medicina_general",
+        "marca": "Cofasa",
+        "componente": "Complejo B",
+        "link_img": "https://i.postimg.cc/tgrf3Vx8/miovit-x-3-cc-x-6-amp-1.jpg"
+      },
+      {
+        "id_catalogo": "16",
+        "nombre_producto": "Neuromix Amp",
+        "nombre_sede": "Cagua",
+        "precio_divisa": "4.29",
+        "modificado": "2023-11-28 18:18:49",
+        "linea": "medicina_general",
+        "marca": "Leti",
+        "componente": "Complejo B",
+        "link_img": "https://i.postimg.cc/tT5kj0XP/neuromix-x-3-cc-x-amp-1.jpg"
+      },
+      {
+        "id_catalogo": "17",
+        "nombre_producto": "Neuromix Amp",
+        "nombre_sede": "Ayacucho",
+        "precio_divisa": "4.29",
+        "modificado": "2023-11-28 18:18:49",
+        "linea": "medicina_general",
+        "marca": "Leti",
+        "componente": "Complejo B",
+        "link_img": "https://i.postimg.cc/tT5kj0XP/neuromix-x-3-cc-x-amp-1.jpg"
+      },
+      {
+        "id_catalogo": "18",
+        "nombre_producto": "Doceplex Jab",
+        "nombre_sede": "Ayacucho",
+        "precio_divisa": "8.13",
+        "modificado": "2023-11-28 18:18:49",
+        "linea": "medicina_general",
+        "marca": "Siegfried",
+        "componente": "Complejo B",
+        "link_img": "https://i.postimg.cc/8CzShGjX/doce-plex-120-cc-1.jpg"
+      },
+      {
+        "id_catalogo": "19",
+        "nombre_producto": "Neuromix",
+        "nombre_sede": "Cagua",
+        "precio_divisa": "2.22",
+        "modificado": "2023-11-28 18:18:49",
+        "linea": "medicina_general",
+        "marca": "Leti",
+        "componente": "Complejo B",
+        "link_img": "https://i.postimg.cc/SKXj4ckG/neuromix-x-10-comp-1.jpg"
+      },
+      {
+        "id_catalogo": "20",
+        "nombre_producto": "Neuromix",
+        "nombre_sede": "Ayacucho",
+        "precio_divisa": "2.22",
+        "modificado": "2023-11-28 18:18:49",
+        "linea": "medicina_general",
+        "marca": "Leti",
+        "componente": "Complejo B",
+        "link_img": "https://i.postimg.cc/SKXj4ckG/neuromix-x-10-comp-1.jpg"
+      },
+      {
+        "id_catalogo": "21",
+        "nombre_producto": "Neuromix",
+        "nombre_sede": "Cagua",
+        "precio_divisa": "4.13",
+        "modificado": "2023-11-28 18:18:49",
+        "linea": "medicina_general",
+        "marca": "Leti",
+        "componente": "Complejo B",
+        "link_img": "https://i.postimg.cc/XJkLyJKB/neuromix-30-comprimido.jpg"
+      },
+      {
+        "id_catalogo": "22",
+        "nombre_producto": "Neuromix",
+        "nombre_sede": "Ayacucho",
+        "precio_divisa": "4.30",
+        "modificado": "2023-11-28 18:18:49",
+        "linea": "medicina_general",
+        "marca": "Leti",
+        "componente": "Complejo B",
+        "link_img": "https://i.postimg.cc/XJkLyJKB/neuromix-30-comprimido.jpg"
+      },
+      {
+        "id_catalogo": "23",
+        "nombre_producto": "Tiroxin",
+        "nombre_sede": "Cagua",
+        "precio_divisa": "13.42",
+        "modificado": "2023-11-28 18:18:49",
+        "linea": "medicina_general",
+        "marca": "Siegfried",
+        "componente": "Levotiroxina Sódica",
+        "link_img": "https://i.postimg.cc/90P2dYjC/tiroxin-x-100-x-50-tab-1.jpg"
+      },
+      {
+        "id_catalogo": "24",
+        "nombre_producto": "Tiroxin",
+        "nombre_sede": "Ayacucho",
+        "precio_divisa": "13.42",
+        "modificado": "2023-11-28 18:18:49",
+        "linea": "medicina_general",
+        "marca": "Siegfried",
+        "componente": "Levotiroxina Sódica",
+        "link_img": "https://i.postimg.cc/90P2dYjC/tiroxin-x-100-x-50-tab-1.jpg"
+      },
+      {
+        "id_catalogo": "25",
+        "nombre_producto": "Tiroxin",
+        "nombre_sede": "Cagua",
+        "precio_divisa": "9.51",
+        "modificado": "2023-11-28 18:18:49",
+        "linea": "medicina_general",
+        "marca": "Siegfried",
+        "componente": "Levotiroxina Sódica",
+        "link_img": "https://i.postimg.cc/fRzd0HhW/tiroxin-x-25-x-50-tab-1.jpg"
+      },
+      {
+        "id_catalogo": "26",
+        "nombre_producto": "Tiroxin",
+        "nombre_sede": "Ayacucho",
+        "precio_divisa": "9.51",
+        "modificado": "2023-11-28 18:18:49",
+        "linea": "medicina_general",
+        "marca": "Siegfried",
+        "componente": "Levotiroxina Sódica",
+        "link_img": "https://i.postimg.cc/fRzd0HhW/tiroxin-x-25-x-50-tab-1.jpg"
+      },
+      {
+        "id_catalogo": "27",
+        "nombre_producto": "Tiroxin",
+        "nombre_sede": "Cagua",
+        "precio_divisa": "12.72",
+        "modificado": "2023-11-28 18:18:49",
+        "linea": "medicina_general",
+        "marca": "Siegfried",
+        "componente": "Levotiroxina Sódica",
+        "link_img": "https://i.postimg.cc/CMCSPdf2/tiroxin-x-50-x-50-1.jpg"
+      },
+      {
+        "id_catalogo": "28",
+        "nombre_producto": "Tiroxin",
+        "nombre_sede": "Ayacucho",
+        "precio_divisa": "12.72",
+        "modificado": "2023-11-28 18:18:49",
+        "linea": "medicina_general",
+        "marca": "Siegfried",
+        "componente": "Levotiroxina Sódica",
+        "link_img": "https://i.postimg.cc/CMCSPdf2/tiroxin-x-50-x-50-1.jpg"
+      },
+      {
+        "id_catalogo": "31",
+        "nombre_producto": "Ferranic Folico",
+        "nombre_sede": "Cagua",
+        "precio_divisa": "13.68",
+        "modificado": "2023-11-28 18:18:49",
+        "linea": "medicina_general",
+        "marca": "Rowe",
+        "componente": "Hierro + Acido Folico",
+        "link_img": "https://i.postimg.cc/FFZvPGLJ/ferronic-folico-x-120-cc.jpg"
+      },
+      {
+        "id_catalogo": "32",
+        "nombre_producto": "Ferranic Folico",
+        "nombre_sede": "Ayacucho",
+        "precio_divisa": "13.68",
+        "modificado": "2023-11-28 18:18:49",
+        "linea": "medicina_general",
+        "marca": "Rowe",
+        "componente": "Hierro + Acido Folico",
+        "link_img": "https://i.postimg.cc/FFZvPGLJ/ferronic-folico-x-120-cc.jpg"
+      },
+      {
+        "id_catalogo": "33",
+        "nombre_producto": "Tapazol",
+        "nombre_sede": "Cagua",
+        "precio_divisa": "8.83",
+        "modificado": "2023-11-28 19:42:23",
+        "linea": "medicina_general",
+        "marca": "Pharmetique",
+        "componente": "Tiamazol",
+        "link_img": "https://i.postimg.cc/y8qkKvLY/tapazol-5-mg-60-tab-1.jpg"
+      },
+      {
+        "id_catalogo": "34",
+        "nombre_producto": "Tapazol",
+        "nombre_sede": "Ayacucho",
+        "precio_divisa": "8.83",
+        "modificado": "2023-11-28 19:42:23",
+        "linea": "medicina_general",
+        "marca": "Pharmetique",
+        "componente": "Tiamazol",
+        "link_img": "https://i.postimg.cc/y8qkKvLY/tapazol-5-mg-60-tab-1.jpg"
+      },
+      {
+        "id_catalogo": "35",
+        "nombre_producto": "Coropres",
+        "nombre_sede": "Cagua",
+        "precio_divisa": "7.91",
+        "modificado": "2023-11-28 19:42:23",
+        "linea": "medicina_general",
+        "marca": "Roemmers",
+        "componente": "Candesartan Cilexetilo",
+        "link_img": "https://i.postimg.cc/Vv6CVgzB/coropres-x-8-mg-x-30-tab-1.jpg,https://i.postimg.cc/yY2L0gTr/coropres-x-8-mg-x-30-tab-2.jpg"
+      },
+      {
+        "id_catalogo": "36",
+        "nombre_producto": "Coropres",
+        "nombre_sede": "Ayacucho",
+        "precio_divisa": "7.91",
+        "modificado": "2023-11-28 19:42:23",
+        "linea": "medicina_general",
+        "marca": "Roemmers",
+        "componente": "Candesartan Cilexetilo",
+        "link_img": "https://i.postimg.cc/Vv6CVgzB/coropres-x-8-mg-x-30-tab-1.jpg,https://i.postimg.cc/yY2L0gTr/coropres-x-8-mg-x-30-tab-2.jpg"
+      },
+      {
+        "id_catalogo": "37",
+        "nombre_producto": "Coropres",
+        "nombre_sede": "Cagua",
+        "precio_divisa": "11.11",
+        "modificado": "2023-11-28 19:42:23",
+        "linea": "medicina_general",
+        "marca": "Roemmers",
+        "componente": "Candesartan Cilexetilo",
+        "link_img": "https://i.postimg.cc/3xdkp1B2/coropres-x-16-mg-x-30-tab-1.jpg"
+      },
+      {
+        "id_catalogo": "38",
+        "nombre_producto": "Coropres",
+        "nombre_sede": "Ayacucho",
+        "precio_divisa": "11.11",
+        "modificado": "2023-11-28 19:42:23",
+        "linea": "medicina_general",
+        "marca": "Roemmers",
+        "componente": "Candesartan Cilexetilo",
+        "link_img": "https://i.postimg.cc/3xdkp1B2/coropres-x-16-mg-x-30-tab-1.jpg"
+      },
+      {
+        "id_catalogo": "39",
+        "nombre_producto": "Coropres",
+        "nombre_sede": "Cagua",
+        "precio_divisa": "17.21",
+        "modificado": "2023-11-28 19:42:23",
+        "linea": "medicina_general",
+        "marca": "Roemmers",
+        "componente": "Candesartan Cilexetilo",
+        "link_img": "https://i.postimg.cc/vZqS2Yfp/coropres-x-32-mg-x-30-tab-1.jpg"
+      },
+      {
+        "id_catalogo": "40",
+        "nombre_producto": "Coropres",
+        "nombre_sede": "Ayacucho",
+        "precio_divisa": "17.21",
+        "modificado": "2023-11-28 19:42:23",
+        "linea": "medicina_general",
+        "marca": "Roemmers",
+        "componente": "Candesartan Cilexetilo",
+        "link_img": "https://i.postimg.cc/vZqS2Yfp/coropres-x-32-mg-x-30-tab-1.jpg"
+      },
+      {
+        "id_catalogo": "41",
+        "nombre_producto": "Coropres H",
+        "nombre_sede": "Cagua",
+        "precio_divisa": "9.43",
+        "modificado": "2023-11-28 19:42:23",
+        "linea": "medicina_general",
+        "marca": "Roemmers",
+        "componente": "Candesartan Cilexetilo+Hidrocloratiazida",
+        "link_img": "https://i.postimg.cc/BvJQpC5h/coropres-x-8-x-12-5-x-30-1.jpg"
+      },
+      {
+        "id_catalogo": "42",
+        "nombre_producto": "Coropres H",
+        "nombre_sede": "Ayacucho",
+        "precio_divisa": "9.43",
+        "modificado": "2023-11-28 19:42:23",
+        "linea": "medicina_general",
+        "marca": "Roemmers",
+        "componente": "Candesartan Cilexetilo+Hidrocloratiazida",
+        "link_img": "https://i.postimg.cc/BvJQpC5h/coropres-x-8-x-12-5-x-30-1.jpg"
+      },
+      {
+        "id_catalogo": "43",
+        "nombre_producto": "Coropres H",
+        "nombre_sede": "Cagua",
+        "precio_divisa": "13.30",
+        "modificado": "2023-11-28 20:05:14",
+        "linea": "medicina_general",
+        "marca": "Megalabs",
+        "componente": "Candesartan Cilexetilo+Hidrocloratiazida",
+        "link_img": "https://i.postimg.cc/RZp41zF0/coropres-x-16-x-12-5-x-30-tab-1.jpg"
+      },
+      {
+        "id_catalogo": "44",
+        "nombre_producto": "Coropres H",
+        "nombre_sede": "Ayacucho",
+        "precio_divisa": "13.30",
+        "modificado": "2023-11-28 20:05:14",
+        "linea": "medicina_general",
+        "marca": "Megalabs",
+        "componente": "Candesartan Cilexetilo+Hidrocloratiazida",
+        "link_img": "https://i.postimg.cc/RZp41zF0/coropres-x-16-x-12-5-x-30-tab-1.jpg"
+      },
+      {
+        "id_catalogo": "45",
+        "nombre_producto": "Coropres HCT",
+        "nombre_sede": "Cagua",
+        "precio_divisa": "19.36",
+        "modificado": "2023-11-28 20:05:14",
+        "linea": "medicina_general",
+        "marca": "Megalabs",
+        "componente": "Candesartan Cilexetilo+Hidrocloratiazida",
+        "link_img": "https://i.postimg.cc/Zn5wxX0T/coropres-x-32-x-12-5-x-30-tab-1.jpg"
+      },
+      {
+        "id_catalogo": "46",
+        "nombre_producto": "Coropres HCT",
+        "nombre_sede": "Ayacucho",
+        "precio_divisa": "19.36",
+        "modificado": "2023-11-28 20:05:14",
+        "linea": "medicina_general",
+        "marca": "Megalabs",
+        "componente": "Candesartan Cilexetilo+Hidrocloratiazida",
+        "link_img": "https://i.postimg.cc/Zn5wxX0T/coropres-x-32-x-12-5-x-30-tab-1.jpg"
+      }
+    ]
+  }
+]

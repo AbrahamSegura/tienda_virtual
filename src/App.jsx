@@ -1,12 +1,18 @@
-import { useState } from 'react'
-import icono from './assets/icono.svg'
+import { TopBar } from './components/TopBar'
+import { Routes } from './components/Routes'
+import { SWRConfig } from 'swr'
+
 
 import './App.css'
 
 function App() {
   return (
-    <TopBar />
-    
+    <SWRConfig value={{
+      fetcher: (...args) => fetch(...args).then(res => res.json()),
+    }}>
+      <TopBar />
+      <Routes />
+    </SWRConfig>
   )
 }
 

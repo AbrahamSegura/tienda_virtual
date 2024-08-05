@@ -24,3 +24,5 @@ public
 *.sln
 *.sw?
 *.sql
+
+moks/*

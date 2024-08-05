@@ -6,7 +6,7 @@ export function FiltersProvider ({ children }) {
   const [filters, setFilters] = useState({
     linea: 'all',
     minPrice: 0,
-    componente: '',
+    finder: Array(0),
     index: 1
   })
 

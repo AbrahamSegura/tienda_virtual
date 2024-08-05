@@ -1,4 +1,4 @@
-import { Signup, Header, FormInput, SendBtn} from "../style/login"
+import { Signup, Header, FormInput, Permiso, SendBtn } from "../style/login"
 
 export function SignupForm(){
     return(
@@ -11,10 +11,10 @@ export function SignupForm(){
           <FormInput type="text" name="ubicacion" placeholder="Ubicacion (Maracay, Cagua)" />
           <FormInput type="password" name="contraseña" placeholder="Contraseña" required />
           <FormInput type="password" name="confirmar" placeholder="Confirmar Contraseña" required />
-          <div>
+          <Permiso>
             <label htmlFor="permiso_crear">¿Esta deacuerdo con suministrar estos datos?</label>
             <input type="checkbox" id="permiso_crear" required />
-          </div>
+          </Permiso>
           <SendBtn>Registrar</SendBtn>
         </form>
       </Signup>

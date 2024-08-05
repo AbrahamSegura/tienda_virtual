@@ -11,7 +11,7 @@ export function Pagination ({ itemsPerPage, totalItems, paginate }){
       }
       setPageNumbers(numbers)
     }, [itemsPerPage, totalItems])
-
+    
     return (
       <NavPage>
         {pageNumbers.map(number => (

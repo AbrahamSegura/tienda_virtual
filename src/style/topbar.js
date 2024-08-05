@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const Header = styled.header`
   display: flex;
   `
-  
+
 export const NavBar = styled.nav`
     display: flex;
     position: fixed;
@@ -14,6 +14,10 @@ export const NavBar = styled.nav`
     background-color: ${({ theme }) => theme.color.white};
     filter: blur(.15px) opacity(0.8);
     z-index: 100;
+
+    @media(max-width: ${({ theme }) => theme.media.PHONE}){
+      justify-content: space-between;
+    }
 `
 
 export const Button = styled.span`
@@ -45,6 +49,10 @@ export const Search = styled.form`
   flex-direction: column;
   position: relative;
   width: 50%;
+
+  @media(max-width: ${({ theme }) => theme.media.PHONE}){
+    width: 80%;
+  }
 `
 export const SearchField = styled.fieldset`
   display: flex;
@@ -55,11 +63,14 @@ export const SearchField = styled.fieldset`
 export const Filter = styled(SearchField)`
   padding-top: 5px;
   font-size: 20px;
-  color: ${({ theme }) => theme.color.primary };
+  color: ${({ theme }) => theme.color.primary};
 }
 `
+export const N = styled.fieldset`
+  display: none;
+`
 
-export const RangeFilter = styled.input.attrs({type:"range"})`
+export const RangeFilter = styled.input.attrs({ type: "range" })`
   margin: 0 5px;
   cursor: pointer;
   
@@ -70,32 +81,32 @@ export const RangeFilter = styled.input.attrs({type:"range"})`
 
 export const SelectFilter = styled.select`
   height: 100%;
-  background-color: ${({ theme }) => theme.color.white };
-  color: ${({ theme }) => theme.color.primary };
+  background-color: ${({ theme }) => theme.color.white};
+  color: ${({ theme }) => theme.color.primary};
   font-size: 18px;
-  border: 2px solid ${({ theme }) => theme.color.primary };
+  border: 2px solid ${({ theme }) => theme.color.primary};
   border-radius: 5px;
   outline: none;
 `
 
 export const OptionFilter = styled.option`
-  color:${({ theme }) => theme.color.white };
-  background-color: ${({ theme }) => theme.color.primary };
+  color:${({ theme }) => theme.color.white};
+  background-color: ${({ theme }) => theme.color.primary};
   display: flex;
   min-height: 25px;
   padding: 0;
 
   &:hover{
-    color:${({ theme }) => theme.color.primary };
-    background-color: ${({ theme }) => theme.color.white };
+    color:${({ theme }) => theme.color.primary};
+    background-color: ${({ theme }) => theme.color.white};
   }
   &:focus{
-    color:${({ theme }) => theme.color.primary };
-    background-color: ${({ theme }) => theme.color.white };
+    color:${({ theme }) => theme.color.primary};
+    background-color: ${({ theme }) => theme.color.white};
   }
 `
 
-export const InputSearch = styled.input`
+export const InputSearch = styled.input.attrs({ type: "search" })`
   width: 100%;
   outline: none;
   border: 2px solid ${({ theme }) => theme.color.shadowPrimary};
@@ -120,7 +131,7 @@ export const BtnSearch = styled.button`
 `
 export const Ico = styled.i`
   margin: auto;
-  color: ${({theme})=> theme.color.white}
+  color: ${({ theme }) => theme.color.white}
 `
 
 export const Picture = styled.picture`
@@ -129,6 +140,7 @@ export const Picture = styled.picture`
   border: 1px solid ${({ theme }) => theme.color.shadowPrimary};
   width: 50px;
   border-radius: 50%;
-  box-shadow: ${({theme})=>theme.shadow.box};
-  background-color: ${({theme}) => theme.color.white};
+  box-shadow: ${({ theme }) => theme.shadow.box};
+  background-color: ${({ theme }) => theme.color.white};
+  height: 50px;
 `

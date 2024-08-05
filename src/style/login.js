@@ -81,3 +81,41 @@ export const LoginForm = styled.article`
 export const LoginHeader = styled(Header)`
   transform: scale(.6);
 `
+export const Permiso = styled.div`
+  font-size: 18px;
+  display: flex;
+  color: ${({ theme }) => theme.color.white};
+  justify-content: space-evenly;
+  font-weight: 900;
+  text-shadow: ${({ theme }) => theme.shadow.text};
+
+  && input{
+    width: 25px;
+  }
+`
+export const BoxMensaje = styled.div`
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  background-color: ${({ theme }) => theme.color.white};
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 50%;
+  padding: 20px;
+  border-radius: ${({ theme }) => theme.media.bordeRadius};
+  box-shadow: ${({ theme }) => theme.shadow.box};
+  transition: .5s ease-in;
+  `
+export const TextMensaje = styled.span`
+  color: ${({ theme }) => theme.color.red};
+  font-size: 20px;
+  font-weight: 700;
+  text-shadow: ${({ theme }) => theme.shadow.text};
+`
+export const CloseBtn = styled.span`
+  position: absolute;
+  right: -10px;
+  font-size: 25px;
+  top: -15px;
+`

@@ -16,6 +16,9 @@ import {
 import { HeartIcon } from '../components/icons/HeartIcon'
 import { useState } from 'react'
 import { useLocation } from 'wouter'
+import { useUser } from '../hook/useUser'
+import { useCart } from '../hook/useCart'
+import { useSingleProduct } from '../hook/useSingleProduct'
 
 export function Card({
   srcImg,
@@ -23,16 +26,25 @@ export function Card({
   nombre_sede,
   marca,
   precio_divisa,
-  precio_local
+  precio_local,
+  id_cart
  }){
-  const user = undefined
-  const [location, setLocation] = useLocation()
-  const [cantidad, setCantidad] = useState(0)
+  const { hadelStorage } = useUser()
+  const { searchProduct } = useSingleProduct()
+  const [_location, setLocation] = useLocation()
+  const { addCart } = useCart()
+  const [quantity, setQuantity] = useState(0)
+
+  const user = hadelStorage({action:"read"})
   const haddleSold = (event) =>{
     event.preventDefault()
+    const idProd = event.target.id 
     if(!user) {
       setLocation("/login")
       return
+    }else{
+      const singleProduct = searchProduct({idProd})
+      addCart({product:singleProduct[0], quantity})
     }
 
   }
@@ -60,13 +72,13 @@ export function Card({
         <PriceRef>
           <b>Ref: </b> ${precio_divisa}
         </PriceRef>
-        <Form onSubmit={haddleSold}>
+        <Form id={id_cart} onSubmit={haddleSold}>
           <InputForm onClick={() => {
-            if (cantidad >= 1) setCantidad(cantidad - 1)
+            if (quantity >= 1) setQuantity(quantity - 1)
           }} type="button" value="-" />
-          <ContCantidad>{cantidad}</ContCantidad>
-          <InputForm onClick={() => setCantidad(cantidad + 1)} type="button" value="+" />
-          <SoldBtn type='submit'>COMPRAR</SoldBtn>
+          <ContCantidad>{quantity}</ContCantidad>
+          <InputForm onClick={() => setQuantity(quantity + 1)} type="button" value="+" />
+          <SoldBtn type='submit'>AL CARRITO</SoldBtn>
         </Form>
       </CardFooter>
     </Cards>

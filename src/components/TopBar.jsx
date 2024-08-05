@@ -2,74 +2,71 @@ import { SearchIcon } from './icons/SearchIcon'
 import { HomeBtn } from './HomeBtn'
 import { LoginBtn } from './LoginBtn'
 import { UserMenu } from './UserMenu'
-
-import { useLocation } from 'wouter'
+import { FilterProducts } from './FilterProducts'
+import { BtnSearch, Header, InputSearch, NavBar, Search, SearchField } from '../style/topbar'
+import { useState } from 'react'
+import { useProducts } from '../hook/useProducts'
 import { useFilter } from '../hook/useFilter'
-import productos from '../moks/prodctos.json'
-import { BtnSearch, 
-        Filter, 
-        Header, 
-        InputSearch, 
-        NavBar, 
-        OptionFilter, 
-        RangeFilter, 
-        Search, 
-        SearchField,
-        SelectFilter } from '../style/topbar'
+import { useLocation } from 'wouter'
+import { searchElement, reduceElement } from '../service/servicesElement'
+import { useUser } from '../hook/useUser'
 
 export function TopBar() {
-  const User = undefined
-  const producto = productos.map(({ data }) => data)[2]
-  const precios = producto.map(data => data.precio_divisa)
-  const maxPrecio = Math.max.apply(null, precios)
-  const [location] = useLocation()
-  const { filters, setFilters } = useFilter()
-  const handelChange = (event) => {
+  const [search, setSearch] = useState("")
+  const { setFilters } = useFilter()
+  const { hadelStorage } = useUser()
+  
+  const user = hadelStorage({action:"read"})
+  const handleInputSearch = (event) => {
+    setSearch(event.target.value)
+  }
+  const product = useProducts()
+  const [location, setLocation] = useLocation()
+
+  const handleSearch = (event) => {
+    event.preventDefault()
+
+    const componentProducto = product.map(prod => prod.componente)
+    const nombreProducto = product.map(prod => prod.nombre_producto)
+
+    const searchComp = searchElement({
+      elem: componentProducto, search
+    })
+
+    const searchNomb = searchElement({
+      elem: nombreProducto, search
+    })
+
+    const componente = reduceElement({ element: searchComp })
+
+    const nombreProd = reduceElement({ element: searchNomb })
+    
+    const finder = nombreProd[0] !== componente[0] ?
+    nombreProd.concat(componente) : nombreProd
+    
     setFilters(prevState => ({
       ...prevState,
-      minPrice: Number(event.target.value)
+      finder
     }))
+    if(location !== "/product") setLocation("/product")
   }
-  const handelCategoty = (event) => {
-    setFilters(prevState => ({
-      ...prevState,
-      linea: event.target.value
-    }))
-  }
+
   return (
     <Header>
       <NavBar>
         <HomeBtn />
-        <Search>
+        <Search onSubmit={handleSearch}>
           <SearchField>
-            <InputSearch type="search" />
+            <InputSearch onChange={handleInputSearch} />
             <BtnSearch>
               <SearchIcon />
             </BtnSearch>
           </SearchField>
-          {location === '/product' ?
-            <Filter>
-              <div>
-                <label htmlFor="precio_minimo"> Precio Minimo</label>
-                <RangeFilter
-                  id='precio_minimo'
-                  value={filters.minPrice}
-                  onChange={handelChange} max={maxPrecio} name='min_price' min={0} />
-                <span>${filters.minPrice}</span>
-              </div>
-              <SelectFilter name='categ' onChange={handelCategoty}>
-                <OptionFilter value="all">Todo</OptionFilter>
-                <OptionFilter value="medicina_general">Medicamentos</OptionFilter>
-                <OptionFilter value="medicina_bister">Blister</OptionFilter>
-                <OptionFilter value="alimentos">Comida</OptionFilter>
-                <OptionFilter value="psicotropico">Psicotropicos</OptionFilter>
-              </SelectFilter>
-            </Filter>
-            : null}
+          <FilterProducts />
         </Search>
-        {User !== undefined ?
+        {!user ?
           <LoginBtn /> :
-          <UserMenu />}
+          <UserMenu user={user} />}
       </NavBar>
     </Header>
   )

@@ -6,8 +6,10 @@ import { useDollarValue } from "../hook/useDollarValue"
 import { Link, useLocation } from "wouter"
 import { CloseIcon } from "./icons/CloseIcon"
 
+// eslint-disable-next-line react/prop-types
 export function CardPage({ user }) {
 
+  // eslint-disable-next-line no-unused-vars
   const [_location, setLocation] = useLocation()
   const { changeFromDollar } = useDollarValue()
   const { cart, getQuantity, removeFromCart } = useCart()
